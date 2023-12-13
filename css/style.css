@@ -1,0 +1,158 @@
+
+
+
+/* Responsive Styling */
+@media only screen and (max-width: 430px) {
+    /* Styles for iPhone 14 Pro Max */
+    .container {
+        height: 100vh; /* Adjust for smaller screens */
+    }
+
+    .font-page-text {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .font-page-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .font-page-text button {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 431px) and (max-width: 768px) {
+    /* Styles for iPad Mini */
+    .container {
+        height: 100vh; /* Adjust for smaller screens */
+    }
+
+    .font-page-text {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .font-page-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .font-page-text button {
+        margin-top: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 769px) {
+    /* Styles for normal laptop */
+    /* You can add specific styles for larger screens here */
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Montserrat', 'Arial', sans-serif;
+    }
+    
+    .container {
+        position: relative;
+        height: 100vh; /* You can adjust this value as needed */
+        overflow: hidden;
+    }
+    
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This property maintains the image's aspect ratio */
+    }
+    
+    .logo-frontpage {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        height: 10%;
+        width: auto;
+    }
+    
+    nav {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: end;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        font-size: 50%;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
+    
+    nav li:last-child {
+        padding-left: 200px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    /* styling h1 and button */
+    .font-page-text {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        text-align: left;
+        color: white;
+    }
+    
+    .font-page-text h1 {
+        font-size: 2rem;
+        line-height: 1.5; /* Adjust as needed */
+        margin-bottom: 10px; /* Add some spacing between lines */
+    }
+    
+    .font-page-text button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #fff; /* Adjust the background color as needed */
+        color: #000; /* Adjust the text color as needed */
+        border: none;
+        border-radius: 8px; /* Adjust the border-radius to make it rounder */
+        cursor: pointer;
+        margin-top: 20px;
+    }
+}
+
+
